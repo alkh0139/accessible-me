@@ -13,18 +13,19 @@
 </head>
 
 <body>
+  <a href="#skip-navigation" class="skip-link">Skip to main content</a>
   <div class="container">
     <div class="site-header">
       <h1>Jam Box Studios</h1>
-      <div class="main-nav">
+      <nav id="skip-navigation" class="main-nav" role="navigation" aria-label="Main Navigation">
         <ul>
           <li><a href="#">Home</a></li>
           <li><a href="#">Products</a></li>
           <li><a href="#">Reservation</a></li>
           <li><a href="#">Studio</a></li>
         </ul>
-      </div>
-      <img src="https://placekitten.com/1200/900" class="banner">
+      </nav>
+      <img src="https://placekitten.com/1200/900" class="banner" alt="Banner Image">
     </div>
     <div class="main-content">
       <h1>Welcome to Jam Box</h1>
@@ -48,7 +49,7 @@
       </div>
       <div class="contact-section">
         <h1>Contact Us</h1>
-        <form action="thanks.html">
+        <form action="thanks.html" role="form">
           <label>Full Name</label>
           <input type="text" placeholder="Full Name">
           <input type="text" placeholder="Email">
@@ -66,3 +67,93 @@
 </body>
 
 </html>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #222;
+}
+
+.emoji {
+  border: 1px solid #222;
+  border-radius: 8px;
+  padding: 1rem;
+}
+
+.emoji h2 {
+  margin: 0;
+  border-bottom: 2px solid #ccc;
+}
+
+.emoji a {
+  text-decoration: none;
+  background-color: #750dae;
+  color: white;
+  padding: 1.5rem;
+  border-radius: 8px;
+  margin: 1rem 0;
+  text-align: left;
+  padding-left: 1rem; 
+  padding-bottom: 1rem;
+  padding-right: 3rem;
+  text-decoration: none;
+  padding-top: 1rem;
+  order: 1;
+  
+}
+
+.icon {
+  font-size: 4rem;
+  text-align: center;
+}
+*{
+    box-sizing: border-box;
+}
+
+.emoji:first-child {
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin: 12px;
+    display: flex;
+
+}
+.emoji:nth-child(3)
+{
+    flex-wrap: wrap;
+    display: flex;
+    margin: 12px;
+    flex-direction: column;
+}
+
+.emoji:nth-child(2) {
+    display: flex;
+    flex-direction: column;
+    margin: 12px;
+    flex-wrap: wrap;
+}
+
+.emoji:last-child {
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 12px;
+ 
+}
+
+p {
+    margin-right: 0.8rem;
+    order: 1;
+    margin-left: 0;
+}
+
+.emojis .emoji {
+    border: 1px black solid;
+    display: flex;
+    border-radius: 0.8rem;
+    justify-content: space-between;
+}
+
+.emojis {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+}
